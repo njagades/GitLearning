@@ -13,7 +13,6 @@ public class BaseTest {
 	public WebDriver driver;
 	public WebDriver WebDriverManager() throws IOException {
 
-		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//project//resource//global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
@@ -25,7 +24,9 @@ public class BaseTest {
 		String browser = browser_maven!=null ? browser_maven : browser_properties;
 		
 		
-		
+		System.out.println("muthu");
+		System.out.println("jagadesh");
+		System.out.println("N");
 		if(driver == null)
 		{
 			if(browser.equalsIgnoreCase("chrome"))
@@ -43,6 +44,7 @@ public class BaseTest {
 		}
 		
 		return driver;
+		
 	}
 
 
